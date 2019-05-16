@@ -8,10 +8,16 @@ authors = [
     "Simon Liu <simon@z.cash>"
     ]
 
+#[lib]
+#name = "rustzcash"
+#path = "src/rustzcash.rs"
+#crate-type = ["staticlib"]
+
 [lib]
-name = "rustzcash"
+name = "zcash"
 path = "src/rustzcash.rs"
-crate-type = ["staticlib"]
+crate-type = ["lib"]
+
 
 [dependencies]
 libc = "0.2"
